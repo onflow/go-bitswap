@@ -8,13 +8,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ipfs/go-bitswap/internal/defaults"
-	"github.com/ipfs/go-bitswap/message"
-	pb "github.com/ipfs/go-bitswap/message/pb"
-	bmetrics "github.com/ipfs/go-bitswap/metrics"
-	bsnet "github.com/ipfs/go-bitswap/network"
-	"github.com/ipfs/go-bitswap/server/internal/decision"
-	"github.com/ipfs/go-bitswap/tracer"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	blockstore "github.com/ipfs/go-ipfs-blockstore"
@@ -23,6 +16,13 @@ import (
 	process "github.com/jbenet/goprocess"
 	procctx "github.com/jbenet/goprocess/context"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/onflow/go-bitswap/internal/defaults"
+	"github.com/onflow/go-bitswap/message"
+	pb "github.com/onflow/go-bitswap/message/pb"
+	bmetrics "github.com/onflow/go-bitswap/metrics"
+	bsnet "github.com/onflow/go-bitswap/network"
+	"github.com/onflow/go-bitswap/server/internal/decision"
+	"github.com/onflow/go-bitswap/tracer"
 	"go.uber.org/zap"
 )
 

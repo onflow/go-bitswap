@@ -9,11 +9,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/go-bitswap"
-	bsmsg "github.com/ipfs/go-bitswap/message"
-	"github.com/ipfs/go-bitswap/server"
-	testinstance "github.com/ipfs/go-bitswap/testinstance"
-	tn "github.com/ipfs/go-bitswap/testnet"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	detectrace "github.com/ipfs/go-detect-race"
@@ -24,6 +19,11 @@ import (
 	tu "github.com/libp2p/go-libp2p-testing/etc"
 	p2ptestutil "github.com/libp2p/go-libp2p-testing/netutil"
 	peer "github.com/libp2p/go-libp2p/core/peer"
+	"github.com/onflow/go-bitswap"
+	bsmsg "github.com/onflow/go-bitswap/message"
+	"github.com/onflow/go-bitswap/server"
+	testinstance "github.com/onflow/go-bitswap/testinstance"
+	tn "github.com/onflow/go-bitswap/testnet"
 )
 
 func isCI() bool {
