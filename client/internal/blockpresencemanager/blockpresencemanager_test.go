@@ -3,8 +3,8 @@ package blockpresencemanager
 import (
 	"testing"
 
-	"github.com/ipfs/go-bitswap/internal/testutil"
 	peer "github.com/libp2p/go-libp2p/core/peer"
+	"github.com/onflow/go-bitswap/internal/testutil"
 
 	cid "github.com/ipfs/go-cid"
 )
