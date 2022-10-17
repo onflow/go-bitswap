@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/go-bitswap/internal/testutil"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/onflow/go-bitswap/internal/testutil"
 	"github.com/stretchr/testify/require"
 )
 

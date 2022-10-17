@@ -1,8 +1,8 @@
 package bitswap
 
 import (
-	"github.com/ipfs/go-bitswap/server"
-	"github.com/ipfs/go-bitswap/tracer"
+	"github.com/onflow/go-bitswap/server"
+	"github.com/onflow/go-bitswap/tracer"
 )
 
 type (

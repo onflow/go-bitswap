@@ -1,9 +1,9 @@
 package bitswap
 
 import (
-	"github.com/ipfs/go-bitswap/message"
-	"github.com/ipfs/go-bitswap/tracer"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/onflow/go-bitswap/message"
+	"github.com/onflow/go-bitswap/tracer"
 )
 
 type sendOnlyTracer interface {

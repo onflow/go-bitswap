@@ -1,6 +1,6 @@
 package decision
 
-import "github.com/ipfs/go-bitswap/server"
+import "github.com/onflow/go-bitswap/server"
 
 type (
 	// DEPRECATED use server.Receipt instead

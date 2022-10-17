@@ -1,4 +1,4 @@
-module github.com/ipfs/go-bitswap
+module github.com/onflow/go-bitswap
 
 require (
 	github.com/benbjohnson/clock v1.3.0

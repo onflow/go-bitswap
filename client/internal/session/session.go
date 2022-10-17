@@ -4,17 +4,17 @@ import (
 	"context"
 	"time"
 
-	"github.com/ipfs/go-bitswap/client/internal"
-	bsbpm "github.com/ipfs/go-bitswap/client/internal/blockpresencemanager"
-	bsgetter "github.com/ipfs/go-bitswap/client/internal/getter"
-	notifications "github.com/ipfs/go-bitswap/client/internal/notifications"
-	bspm "github.com/ipfs/go-bitswap/client/internal/peermanager"
-	bssim "github.com/ipfs/go-bitswap/client/internal/sessioninterestmanager"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	delay "github.com/ipfs/go-ipfs-delay"
 	logging "github.com/ipfs/go-log"
 	peer "github.com/libp2p/go-libp2p/core/peer"
+	"github.com/onflow/go-bitswap/client/internal"
+	bsbpm "github.com/onflow/go-bitswap/client/internal/blockpresencemanager"
+	bsgetter "github.com/onflow/go-bitswap/client/internal/getter"
+	notifications "github.com/onflow/go-bitswap/client/internal/notifications"
+	bspm "github.com/onflow/go-bitswap/client/internal/peermanager"
+	bssim "github.com/onflow/go-bitswap/client/internal/sessioninterestmanager"
 	"go.uber.org/zap"
 )
 
