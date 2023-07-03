@@ -168,7 +168,7 @@ func (s *streamMessageSender) multiAttempt(ctx context.Context, fn func() error)
 		}
 
 		// Protocol is not supported, so no need to try multiple times
-		if errors.Is(err, multistream.ErrNotSupported) {
+		if errors.Is(err, multistream.ErrNotSupported[protocol.ID]{}) {
 			s.bsnet.connectEvtMgr.MarkUnresponsive(s.to)
 			return err
 		}
@@ -425,7 +425,7 @@ func (bsnet *impl) peerUpdatedSubscription(ctx context.Context, sub event.Subscr
 }
 
 func (bsnet *impl) peerSupportsBitswap(peerID peer.ID) bool {
-	protocols, err := bsnet.host.Peerstore().SupportsProtocols(peerID, protocol.ConvertToStrings(bsnet.supportedProtocols)...)
+	protocols, err := bsnet.host.Peerstore().SupportsProtocols(peerID, bsnet.supportedProtocols...)
 	return err == nil && len(protocols) > 0
 }
 
